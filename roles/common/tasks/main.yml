@@ -1,0 +1,9 @@
+---
+- name: Update system
+  package: update_cache=yes
+
+- name: Intall a set of basic packages
+  package: name={{item}} update_cache=yes state=latest
+  with_items:
+    - vim
+    - git

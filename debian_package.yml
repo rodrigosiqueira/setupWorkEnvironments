@@ -1,0 +1,8 @@
+---
+- name: Debian machine for package task
+  hosts: debian_for_package_work
+  user: root
+  become: yes
+  roles:
+    - common
+    - debian_package
