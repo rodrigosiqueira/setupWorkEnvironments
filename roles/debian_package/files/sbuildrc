@@ -1,0 +1,5 @@
+$build_arch_all=1;
+$distribution='unstable';
+
+$run_lintian=1;
+$lintian_opts=['-i', '-I'];

@@ -10,9 +10,13 @@
     - devscripts
     - quilt
     - cmake
+    - sbuild
 
 - name: Copy source list
   synchronize: src=files/sources.list dest=/etc/apt/sources.list
+
+- name: Copy sbuildrc
+  synchronize: src=files/sbuildrc dest=/home/siqueira/.sbuildrc
 
 - name: Create working directory
   file:
